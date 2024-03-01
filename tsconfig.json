@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["es6", "dom"],
+        "types": ["cypress", "node"],
+        "esModuleInterop": true,
+        // cypress-cucumber-preprocessor utilizes Conditional Exports, requiring node16
+        // https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md#note-for-typescript-users
+        "module": "node16",
+    },
+    "include": ["**/*.ts"]
+}
