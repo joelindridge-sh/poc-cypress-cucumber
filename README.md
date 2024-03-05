@@ -13,6 +13,19 @@ Dependencies can then be installed via the following command:
 
 `npm i`
 
+### Environment
+This project makes use of [cypress.env.json](https://docs.cypress.io/guides/guides/environment-variables#Option-2-cypressenvjson) to load environment variables, containing details for logging into the application.
+
+Add and ammend the following file to the root of the project:
+
+`cypress.env.json`
+```
+{
+    "username": "xxxxxxxxx",
+    "password": "xxxxxxxxx"
+}
+```
+
 ### VSCode & Cucumber
 VSCode has a useful cucumber extension providing useful functionality such as navigation between feature files and step definitions.
 
@@ -28,19 +41,6 @@ Add the following file to the root of the project:
     "cucumber.glue": [
         "cypress/tests/**/*.ts"
     ]
-}
-```
-
-### Environments
-This project makes use of [dotenv](https://github.com/motdotla/dotenv) to read environment variables from a file, containing details for logging into the application.
-
-Add and ammend the following file to the root of the project:
-
-`.env`
-```
-{
-  "username": "xxxxxxxxx",
-  "password": "xxxxxxxxx"
 }
 ```
 
