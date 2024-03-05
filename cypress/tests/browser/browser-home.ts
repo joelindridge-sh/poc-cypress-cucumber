@@ -1,5 +1,5 @@
 import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import homePage from "../../pages/homePage";
+import homePage from "../pages/homePage";
 
 When("I visit the home page", () => {
   homePage.visit();

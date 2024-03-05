@@ -1,5 +1,5 @@
 import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import homePage from "../../pages/homePage";
+import homePage from "../pages/homePage";
 
 When('I make a GET request to the home page', function() {
   cy.request("GET", homePage.url).then((response) => {
