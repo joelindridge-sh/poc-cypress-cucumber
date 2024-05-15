@@ -18,8 +18,8 @@ node_modules/
 cypress.env.json
 
 # Cypress test run files
-/reports/
-/screenshots/
+/cypress/reports/
+/cypress/screenshots/
 # downloads?
 # outputs?
 
